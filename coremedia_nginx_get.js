@@ -12,5 +12,5 @@ export let options = {
 
 export default function () {
     let params = { headers: { Host: "cae-test-coremedia.mainova.de" } };
-    http.get("http://nginx.nginx/de/", params);
+    http.get("http://172.18.121.121/de/", params);
 };
