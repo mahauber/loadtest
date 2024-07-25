@@ -1,7 +1,7 @@
 import http from 'k6/http';
 
 export let options = {
-  vus: 100,
+  vus: 20,
   duration: '60s',
   hosts: {
     'cae-test-coremedia.mainova.de':     '172.18.121.121'
