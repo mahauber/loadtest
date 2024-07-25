@@ -6,11 +6,15 @@ export let options = {
         { target: 500, duration: '0' }, // instantly jump to 500 iters/s
         { target: 500, duration: '10m' }, // continue with 500 iters/s for 10 minutes
   ],
+  hosts: {
+    'cae-test-coremedia.mainova.de':     '172.18.121.121',
+    'test.k6.io:443': '1.2.3.4:8443',
+    '*.grafana.com':  '1.2.3.4',
+  },
   insecureSkipTLSVerify: true,
   noConnectionReuse: true
 }
 
 export default function () {
-    let params = { headers: { Host: "cae-test-coremedia.mainova.de" } };
-    http.get("http://172.18.121.121/de/", params);
+    http.get("http://cae-test-coremedia.mainova.de/de/");
 };
