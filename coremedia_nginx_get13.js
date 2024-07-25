@@ -6,7 +6,8 @@ export let options = {
   hosts: {
     'cae-test-coremedia.mainova.de':     '172.18.121.121'
   },
-  insecureSkipTLSVerify: true
+  insecureSkipTLSVerify: true,
+  noConnectionReuse: true
 }
 
 export default function () {
