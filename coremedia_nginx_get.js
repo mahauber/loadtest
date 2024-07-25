@@ -14,5 +14,5 @@ export let options = {
 }
 
 export default function () {
-    http.get("https://google.de");
+    http.get("https://cae-test-coremedia.mainova.de/de/");
 };
