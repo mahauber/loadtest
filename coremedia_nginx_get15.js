@@ -1,7 +1,7 @@
 import http from 'k6/http';
 
 export let options = {
-  vus: 5,
+  vus: 50,
   duration: '60s',
   rps: 20,
   hosts: {
