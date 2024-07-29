@@ -5,7 +5,7 @@ export let options = {
   duration: '60s',
   rps: 20,
   hosts: {
-    'cae-test-coremedia.mainova.de':     '172.18.60.66'
+    'cae-dev-coremedia.mainova.de':     '172.18.60.66'
   },
   insecureSkipTLSVerify: true,
   noConnectionReuse: true,
